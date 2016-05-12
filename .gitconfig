@@ -1,0 +1,32 @@
+[gui]
+	recentrepo = C:/ServiceBusTest/MassTransit/source
+	recentrepo = C:/ServiceBusTest/RabbitMQ_EIP
+[core]
+	editor = \"C:/Program Files (x86)/Notepad++/notepad++.exe\" -multiInst -nosession
+[user]
+	name = Brian Zell
+	email = bzell@idtdna.com
+[push]
+	default = simple
+[difftool]
+	prompt = false
+[diff]
+	guitool = beyondcompare4
+[difftool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[difftool "beyondcompare4"]
+	path = C:/Program Files (x86)/Beyond Compare 4/bcomp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = BeyondCompare4
+[mergetool]
+	prompt = false
+[mergetool "kdiff3"]
+	path = C:/Program Files (x86)/KDiff3/kdiff3.exe
+[mergetool "BeyondCompare4"]
+	path = C:/Program Files (x86)/Beyond Compare 4/bcomp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[alias]
+	clr = !git checkout . && git clean -fdx
+	g = !git lg --all
+	lg = log --date-order --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
